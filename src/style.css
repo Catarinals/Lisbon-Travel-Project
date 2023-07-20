@@ -1,11 +1,19 @@
-/*font-family: "Abril Fatface", cursive;*/
-
 body {
   font-family: "Poppins", sans-serif;
 }
 
 .container {
   max-width: 1400px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -57,7 +65,48 @@ header a {
   padding: 16px 32px;
 }
 
-@media (max-width: 900px) {
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(039, 32, 68, 0.9)
+    ),
+    url(../images/lisbon-footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-right: 20px;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
