@@ -84,6 +84,10 @@ section.secondary {
   background: #f8f8f8;
 }
 
+section.photos h3 {
+  padding-bottom: 40px;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../images/bg.png");
